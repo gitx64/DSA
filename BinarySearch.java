@@ -18,7 +18,7 @@ public class BinarySearch {
         int end = arr.length - 1;
 
         while (start <= end) {
-            int mid = (start + end) / 2; // for long index purpose.
+            int mid = start + (end - start)/2; // for long index purpose.
             
             if (target > arr[mid]) {
                 
